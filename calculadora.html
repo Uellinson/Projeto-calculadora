@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="calculadora.css">
+    </head>
+    <body>
+        <main>
+            <div id="corpo">
+                
+                <div id="resultado">50</div>
+                
+                <div id="operadores">
+                    <button id="mais" onclick="clicarMais()">+</button>
+                    <button>-</button>
+                    <button>x</button>
+                    <button>÷</button>
+                </div>
+                
+                <div id="nums1">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>   
+                </div>
+                
+                <div id="nums2">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                </div>
+                
+                <div id="nums3">
+                    <button id="um" onclick="clicarUm()">1</button>
+                    <button id="dois"  onclick="clicar()">2</button>
+                    <button>3</button>
+                    
+                </div>
+
+                <div id="nums4">
+                    <button id="clear" onclick="limpar()">C</button>
+                    <button>0</button>
+                    <button>X</button>
+                </div>
+                
+                <button id="igual" onclick="somar()">=</button>
+        </div>
+    </main>
+</body>
+<script>
+
+
+
+    res = document.getElementById('resultado')
+    um = document.getElementById('um')
+    mais = document.getElementById('mais')
+    dois = document.getElementById('dois')
+    igual = document.getElementById('igual')
+
+
+    buttons = document.querySelectorAll('button').forEach((i,e) => {
+        this.nums = i.innerText
+        console.log(`${i.innerText} ${e}`)
+    })
+
+   
+    function clicarUm(){  
+        res.innerText += um.innerText
+        this.num1 = 
+        this.num2 = 
+        
+    }
+
+    function clicarMais(){
+        res.innerText += mais.innerText
+        
+    }
+
+    function somar(num1,operacao,num2){
+        res.innerText = this.num1 + this.num2
+    }
+
+    function limpar(){
+        res.innerText = ''
+    }
+</script>
+</html>
